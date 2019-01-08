@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Exercice 5</title>
+</head>
+<body>
+  <div class="container">
+    <img src="Assets/IMG/image1.jpg" id="image1" onmouseover="this.src = 'Assets/IMG/image1_2.jpg'" />
+    <img src="Assets/IMG/image2.jpg" id="image2" onmouseover="this.src = 'Assets/IMG/image2_2.jpg'" />
+    <img src="Assets/IMG/image3.jpg" id="image3" onmouseover="this.src = 'Assets/IMG/image3_2.jpg'" />
+    <img src="Assets/IMG/image4.jpg" id="image4" onmouseover="this.src = 'Assets/IMG/image4_2.jpg'" />
+    <img src="Assets/IMG/image5.jpg" id="image5" onmouseover="this.src = 'Assets/IMG/image5_2.jpg'" />
+  </div>
+  <script type="text/javascript">
+  img1 = document.getElementById('image1');
+  img2 = document.getElementById('image2');
+  img3 = document.getElementById('image3');
+  img4 = document.getElementById('image4');
+  img5 = document.getElementById('image5');
+  img1.addEventListener('mouseover', changeImg);
+  img2.addEventListener('mouseover', changeImg);
+  img3.addEventListener('mouseover', changeImg);
+  img4.addEventListener('mouseover', changeImg);
+  img5.addEventListener('mouseover', changeImg);
+  </script>
+  <script src="Assets/JS/Exercice5.js" charset="utf-8"></script>
+</body>
+</html>

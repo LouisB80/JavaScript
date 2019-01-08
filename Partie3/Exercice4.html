@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Exercice 4</title>
+</head>
+<body>
+  <form>
+    <div><label for="password">Votre mot de passe : </label><input type="text" name="password" id="password" /></div>
+    <div><label for="confirmPassword">Confirmez : </label><input type="text" name="confirmPassword" id="confirmPassword" /></div>
+    <div><input type="submit" name="submit" id="submit" value="Varification" /></div>
+  </form>
+
+  <script src="Assets/JS/Exercice4.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    var elemnt = document.getElementById('submit');
+    elemnt.addEventListener('click', function(e){
+      e.preventDefault();
+      inputBorder();
+    });
+  </script>
+</body>
+</html>

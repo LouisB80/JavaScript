@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Exercice 6</title>
+</head>
+<body>
+  <div class="container">
+    <img src="Assets/IMG/image1.jpg" id="image1" />
+    <img src="Assets/IMG/image2.jpg" id="image2" />
+    <img src="Assets/IMG/image3.jpg" id="image3" />
+    <img src="Assets/IMG/image4.jpg" id="image4" />
+    <img src="Assets/IMG/image5.jpg" id="image5" />
+  </div>
+  <script src="Assets/JS/Exercice6.js" charset="utf-8"></script>
+  <script type="text/javascript">
+//L'utilisation de document.getElementById('id') récupère l'identifiant (id) et le stock dans une variable.//
+      var img1 = document.getElementById('image1');
+      var img2 = document.getElementById('image2');
+      var img3 = document.getElementById('image3');
+      var img4 = document.getElementById('image4');
+      var img5 = document.getElementById('image5');
+// DOM 1 // On utilise l'element addEventListener afin de définir un evenement (mouseover, mouseout) qui servira à activer la fonction changeImg // La fonction changeImg modifie la source de l'image//
+      img1.addEventListener('mouseover', changeImg);
+      img1.addEventListener('mouseout', resetImg);
+      img2.addEventListener('mouseover', changeImg);
+      img2.addEventListener('mouseout', resetImg);
+      img3.addEventListener('mouseover', changeImg);
+      img3.addEventListener('mouseout', resetImg);
+      img4.addEventListener('mouseover', changeImg);
+      img4.addEventListener('mouseout', resetImg);
+      img5.addEventListener('mouseover', changeImg);
+      img5.addEventListener('mouseout', resetImg);
+  </script>
+</body>
+</html>
